@@ -7,10 +7,14 @@ class Welcome extends Controller {
 		parent::Controller();	
 	}
 	
-	function index()
-	{
-		$this->load->view('welcome_message');
+	// --------------------------------------------------------------------
+
+    function index()
+    {
+		build_page('welcome/index/index', NULL, 'Homepage');
 	}
+	
+	// --------------------------------------------------------------------
 }
 
 /* End of file welcome.php */
