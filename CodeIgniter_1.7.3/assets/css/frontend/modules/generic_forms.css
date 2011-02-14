@@ -1,0 +1,55 @@
+/*-------------------------------------------------------
+	Generic form styling
+-------------------------------------------------------*/
+
+form label {
+	float: left;
+	clear: left;
+	width: 268px;
+	padding-right: 10px;
+	line-height: 1.2;
+	}
+form input,
+form textarea,
+form select {
+	width: 268px;
+	margin: 0px 0px 16px;
+	border: 1px solid #b3b3b3;
+	border-top-width: 2px;
+	border-bottom-color: #ddd;
+	padding: 3px;
+	color: #515151;
+	}
+form select.date {
+	width: 55px !important;
+	margin-top:9px;
+	}
+form select {
+	width: 275px !important;
+	}
+form input:focus,
+form textarea:focus,
+form select:focus {
+	border-color: #ccc;
+	color: #000;
+	outline: none !important;
+	background: #efefef;
+	}	
+form input.checkbox {
+	width: auto !important;
+	margin: auto !important;
+	margin: 0;
+	padding: 0;
+	float: left;
+	border: none !important;
+	}
+form button { 
+	margin: 30px 0 16px 280px;
+	width: auto !important;
+	}
+
+form input[type=radio] {
+	float:left;
+	margin:0 10px 17px 0;
+	width: 10px !important;
+	}	

@@ -1,0 +1,88 @@
+/* =Importing rules
+-------------------------------------------------------*/
+
+@import url(branding/header.css);
+@import url(branding/navigation.css);
+@import url(branding/footer.css);
+@import url(modules/generic_forms.css);
+@import url(../shared/generic/reset.css);
+@import url(../shared/generic/helpers.css);
+@import url(../shared/modules/flash_data.css);
+@import url(../shared/modules/development.css);
+
+/* =Elements
+-------------------------------------------------------*/
+
+html,
+body {
+	width: auto;
+	}
+	body {
+		text-align:left;
+		font-family: Arial, Helvetica, sans-serif; 
+		font-size:14px; 
+		color:#000000;
+		background:#FFFFFF;
+		font-size: 14px;
+		padding: 0 !important;
+	}
+	a:link {
+		color:#8C2920;
+		text-decoration:none;
+		}
+	a:visited {
+		text-decoration:none;
+		color:#8C2920;
+		}
+	a:hover {
+		text-decoration:none;
+		color:#8C2920;
+		}
+	a:active {
+		text-decoration:none;
+		outline:none;
+		}
+	h1, h2, h3, h4, h5, h6 {
+		padding:0 0 .6em;
+		line-height:1;
+		/*font-weight:bold;*/
+		color:#000000;
+		font-family: Arial, Helvetica, sans-serif; 
+		}
+		h1 {font-size:22px; padding: 0 0 31px 0 !important;}
+		h2 {font-size:20px;}
+		h3 {font-size:18px;}
+		h4 {font-size:16px;}
+	p {
+		font-family: Arial, Helvetica, sans-serif; 
+		font-size: 14px;
+		margin: 10px 0;
+		padding: 0px;
+		}
+
+/* =Layout elements
+-------------------------------------------------------*/
+#page-wrapper {
+	width:970px;
+	margin:0 auto;
+	clear: both;
+}
+#content {
+	padding-left: 72px;
+	padding-right: 34px;
+	overflow: hidden;
+	}
+	#content .column.full {
+		float:left;
+		width: 100%;
+		}
+	#content .column.left {
+		float:left;
+		width:458px;
+		}
+	#content .column.right {
+		margin-left: 46px;
+		float:right;
+		width: 360px;
+		overflow: hidden;
+		}

@@ -1,0 +1,15 @@
+/*-------------------------------------------------------
+	Development styling - shared
+-------------------------------------------------------*/
+
+.dev-note {
+	color: red;
+	font-weight: bold;
+	}
+	div.dev-note {
+		background: #FBE6F2;
+		border: 1px dashed #CCCCCC;
+		display: block;
+		width:280px;
+		margin: 15px 0;
+		}
