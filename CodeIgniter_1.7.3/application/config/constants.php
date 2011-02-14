@@ -46,6 +46,7 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 define('WEBSITE_NAME', 'Example website name');
 define('META_DESCRIPTION', '');
 define('META_KEYWORDS', '');
+define('VAT_RATE', 20); // UK VAT percentage
 
 /* End of file constants.php */
 /* Location: ./system/application/config/constants.php */
