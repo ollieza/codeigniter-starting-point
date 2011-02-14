@@ -9,7 +9,11 @@
 | For more info visit:  http://www.php.net/error_reporting
 |
 */
-	error_reporting(E_ALL);
+	//error_reporting(E_ALL);
+
+	// added to fix error on PHP 5.3.1
+	// http://philsturgeon.co.uk/news/2009/12/CodeIgniter-on-PHP-5.3
+	error_reporting(E_ALL ^ E_DEPRECATED);
 
 /*
 |---------------------------------------------------------------
