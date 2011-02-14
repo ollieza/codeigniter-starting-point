@@ -43,6 +43,18 @@
 $route['default_controller'] = "welcome";
 $route['scaffolding_trigger'] = "";
 
+/*
+|--------------------------------------------------------------
+| Custom routing rules
+|--------------------------------------------------------------
+*/
+
+// Frontend
+
+// Admin
+$route['admin'] = 'admin/dashboard';
+$route['admin/login'] = "admin/auth/login";
+$route['admin/logout'] = "admin/auth/logout";
 
 /* End of file routes.php */
 /* Location: ./system/application/config/routes.php */
