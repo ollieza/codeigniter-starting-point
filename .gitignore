@@ -1,5 +1,6 @@
 */config/database.php
 */config/constants.php
+*/config/constants_environment.php
 */system/logs/log-*.php
 */system/cache/*
 */systen/cache/!index.html
