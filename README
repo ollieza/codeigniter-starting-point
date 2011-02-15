@@ -42,7 +42,7 @@ Added base controllers
  
 Helpers
 - Debug
-- Time
+- Time - https://github.com/ollierattue/codeigniter-time-helper
 - URL - external_redirect(), get_domain(), and admin_url()
 - Form
 - Tax helper (UK VAT rate)
@@ -52,11 +52,11 @@ Helpers
 Libraries
 - Links library - Save database table names into application/config/database_tables.php and the array key is then used in models. This means a table rename only needs to be updated in one place. 
 - Autoresponder - https://github.com/ollierattue/codeigniter-autoresponder 
-- SimpleLoginSecure auth library with amnesia
-- Router extension - allows controllers to have multiple directories
+- SimpleLoginSecure auth library - http://codeigniter.com/wiki/SimpleLoginSecure/
+- Router extension - allows controllers to have multiple directories - http://glennpratama.wordpress.com/2009/10/20/multi-level-subfolder-for-controller-in-codeigniter/
 - URI library extension - filter_uri() now allows url_encode characters
 - Form validation extension - added greater_than_or_equal() validation rule
-- Log library extension - emails errors to developer
+- Log library extension - emails errors to developer - http://wpstorm.net/2009/05/email-log-messages-library-codeigniter/
 - Session library extension - flashdata now supports 'success' or 'error' status and adds div formatting as applicable
 - DB utility library extension - fixed bug in csv_from_result() and added html encoding
 
