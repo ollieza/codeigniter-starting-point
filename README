@@ -7,49 +7,40 @@ Documentation
 =============
 
 CI core fixes
-
 - Applied Phil sturgeons PHP 5.3 deprecated error reporting fix http://philsturgeon.co.uk/news/2009/12/CodeIgniter-on-PHP-5.3 
 
 CI settings
-
 - Saving session data to db
 - Autoloading helpers, libraries, and config files
 
 CI restructuring
-
 - Moved application directory outside of system directory
 - Moved application/config/database.php to application/config/database.php-default
 
 .htaccess
-
 - Mod_Rewrite rules to create pretty urls
 
 Git ignore
-
 - Ignored application/config/database.php
 - Ignored application/config/constants_environment.php
 - Ignored log files
 - Ignored cache files
 
 Constants - Added useful info
-
 - Website name
 - Meta description and keywords
 
 Environment settings - application/config/constants_environment.php-default
-
 - System, developer, notification emails
 - Profiler ON/OFF
 - Email error log ON/OFF
 
 Added base controllers
-
 - Frontend
 - Admin
 - Shared
  
 Helpers
-
 - Debug
 - Time
 - URL - external_redirect(), get_domain(), and admin_url()
@@ -59,7 +50,6 @@ Helpers
 - Template
 
 Libraries
-
 - Links library - Save database table names into application/config/database_tables.php and the array key is then used in models. This means a table rename only needs to be updated in one place. 
 - Autoresponder - https://github.com/ollierattue/codeigniter-autoresponder 
 - SimpleLoginSecure auth library with amnesia
@@ -71,29 +61,24 @@ Libraries
 - DB utility library extension - fixed bug in csv_from_result() and added html encoding
 
 Models and db 
-
 - Countries db table and model
 - Options model and schema - useful for saving name -> value settings
 - Generic CRUD
 
 Controllers and views
-
 - Admin login, dashboard, logout functionality
 - Amnesia - forgotten password reset
 
 CSS
-
 - Structured in frontend, admin, and shared directories
 - Useful generic helper and reset code
 - Useful form, development, and flash_data styling
 
 Javascript
-
 - jQuery
 - Json js encode/decode functions
 
 Images
-
 - Image directory with useful icons
 
 Extra
