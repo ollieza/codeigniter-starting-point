@@ -6,6 +6,9 @@
 |--------------------------------------------------------------------------
 */
 
+// A dummy config array value to allow additional constants. 
+$config['environment_constants'] = TRUE;
+
 define("SYSTEM_EMAIL", "info@${_SERVER['HTTP_HOST']}"); // From email for amnesia, autoresponder, error logs etc
 
 // Notifications
