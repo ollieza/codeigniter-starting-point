@@ -7,7 +7,7 @@
 	<meta name="keywords" content="<?php echo $meta_keywords; ?>" />
 	<meta name="description" content="<?php echo $meta_description; ?>" />
 	<meta http-equiv="X-UA-Compatible" content="IE=8" />
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url; ?>assets/css/frontend/core.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/frontend/core.css" />
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/javascripts/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/javascripts/json.js"></script>
 </head>
