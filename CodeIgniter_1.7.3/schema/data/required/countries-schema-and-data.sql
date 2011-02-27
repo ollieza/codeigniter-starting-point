@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS `countries` (
   `country_printable_name` varchar(80) NOT NULL,
   `country_iso3` char(3) default NULL,
   `country_numcode` smallint(6) default NULL,
-  PRIMARY KEY  (`iso`)
+  PRIMARY KEY  (`country_iso`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
