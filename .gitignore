@@ -1,4 +1,4 @@
-*/config/database.php
+*/web/application/config/database.php
 */config/environment_settings.php
 */config/autoresponderlib_config.php
 */application/logs/log-*.php
