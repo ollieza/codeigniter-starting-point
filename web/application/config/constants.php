@@ -42,13 +42,16 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 |--------------------------------------------------------------------------
 */
 
-define('WEBSITE_NAME', '');
-define('SLOGAN', "");
+define('WEBSITE_NAME', 'Your website name');
+define('SLOGAN', "Your slogan");
 define('META_DESCRIPTION', '');
 define('META_KEYWORDS', '');
 
+define('TWITTER_ACCOUNT', ''); // e.g. ollierattue
+define('FACEBOOK_URL', ''); // e.g. http://facebook.com/crashouts
+
 define('BLOG_RSS_URL', '');
-define('TWITTER_RSS_URL', 'http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=xxxxxxxxx');
+define('TWITTER_RSS_URL', 'http://api.twitter.com/1/statuses/user_timeline.rss?screen_name='.TWITTER_ACCOUNT);
 
 define('SUPPORT_EMAIL', ''); // Displayed to users
 define('DEVELOPER_EMAIL', ''); // Notifications / Errors sent to this address
