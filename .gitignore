@@ -1,9 +1,9 @@
-*/web/application/config/database.php
-*/config/environment_settings.php
-*/config/autoresponderlib_config.php
-*/application/logs/log-*.php
-*/application/cache/*
-*/application/cache/!index.html
+web/application/config/database.php
+web/application/config/environment_settings.php
+web/application/config/autoresponderlib_config.php
+web/application/logs/log-*.php
+web/application/cache/*
+web/application/cache/!index.html
 
 # Numerous always-ignore extensions
 *.diff
