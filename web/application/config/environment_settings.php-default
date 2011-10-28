@@ -1,0 +1,18 @@
+<?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
+
+/*
+|--------------------------------------------------------------------------
+| Settings which vary from system to system
+|--------------------------------------------------------------------------
+*/
+
+// A dummy config array value to allow additional constants. 
+$config['environment_settings'] = TRUE;
+
+// Environment settings
+
+define('ENABLE_PROFILER', TRUE);
+define('EMAIL_ERROR_LOG', FALSE);
+
+/* End of file constants_environment.php */
+/* Location: ./application/config/constants_environment.php */
