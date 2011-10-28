@@ -86,9 +86,7 @@ TODO
 
 - Rework template helper into library
 - Tidy up SimpleLoginSecure
-- Generic user signup form
-- RSS Parser
-- Starting point welcome view
+- Base CSS file
 
 Extra
 =====
