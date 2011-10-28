@@ -1,7 +1,43 @@
 */config/database.php
-*/config/constants.php
-*/config/constants_environment.php
-*/system/logs/log-*.php
-*/system/cache/*
-*/systen/cache/!index.html
-*/assets/phpThumb/cache/*
+*/config/environment_settings.php
+*/config/autoresponderlib_config.php
+*/application/logs/log-*.php
+*/application/cache/*
+*/application/cache/!index.html
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+
+# OS or Editor folders
+.DS_Store
+.cache
+.project
+.settings
+nbproject
+thumbs.db
+
+# Dreamweaver added files
+_notes
+dwsync.xml
+
+# Komodo
+*.komodoproject
+.komodotools
+
+# Folders to ignore
+.hg
+.svn
+publish
+.idea
+
+# build script local files
+build/buildinfo.properties
+build/config/buildinfo.properties
