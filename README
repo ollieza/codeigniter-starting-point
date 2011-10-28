@@ -16,6 +16,11 @@ CI restructuring
 .htaccess
 - Mod_Rewrite rules to create pretty urls
 
+crossdomain.xml
+- None policy so access is not allowed from other domains - e.g. flash
+
+
+
 Git ignore
 - Ignored application/config/database.php
 - Ignored application/config/settings_environment.php
@@ -59,8 +64,6 @@ Libraries
 
 Models and db 
 - Countries db table and model
-- Options model and schema - useful for saving name -> value settings
-- Generic CRUD
 
 Controllers and views
 - Admin login, dashboard, logout functionality
