@@ -1,0 +1,30 @@
+<?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
+
+/*
+|--------------------------------------------------------------------------
+| Autoresponder class config
+|--------------------------------------------------------------------------
+*/
+
+// used for development to switch autoresponder emails ON or OFF
+$config['autoresponder_enable'] = TRUE;
+$config['autoresponder_bcc_notification_email'] = DEVELOPER_EMAIL;
+
+$config['autoresponder_from_email'] = SYSTEM_EMAIL;
+$config['autoresponder_from_name'] = WEBSITE_NAME;
+
+$config['autoresponder_mailtype'] = 'html';
+$config['autoresponder_charset'] = 'utf-8';
+$config['autoresponder_wordwrap'] = TRUE;
+
+// SMTP settings
+$config['autoresponder_use_smtp'] = FALSE;
+$config['autoresponder_protocol'] = 'smtp';
+$config['autoresponder_smtp_host'] = '';
+$config['autoresponder_smtp_user'] = '';
+$config['autoresponder_smtp_pass'] = '';
+$config['autoresponder_smtp_port'] = 465;
+$config['autoresponder_smtp_timeout'] = 5;
+
+/* End of file database_tables.php */
+/* Location: ./application/config/database_tables.php */
