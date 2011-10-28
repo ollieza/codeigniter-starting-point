@@ -1,20 +1,16 @@
-CodeIgniter starting point (Status = functional)
-=============================================
+CodeIgniter (2.0.3) Starting Point - Status = alpha 
+====================================================================
 
 A custom CodeIgniter installation with useful libraries, helpers, fixes, and useful modifications to the standard distributed code released by Ellis Labs.
 
-Documentation
-=============
-
-CI core fixes
-- Applied Phil sturgeons PHP 5.3 deprecated error reporting fix http://philsturgeon.co.uk/news/2009/12/CodeIgniter-on-PHP-5.3 
+Changes and Additions
+=====================
 
 CI settings
 - Saving session data to db
 - Autoloading helpers, libraries, and config files
 
 CI restructuring
-- Moved application directory outside of system directory
 - Moved application/config/database.php to application/config/database.php-default
 
 .htaccess
@@ -22,16 +18,17 @@ CI restructuring
 
 Git ignore
 - Ignored application/config/database.php
-- Ignored application/config/constants_environment.php
+- Ignored application/config/settings_environment.php
 - Ignored log files
 - Ignored cache files
 
 Constants - Added useful info
-- Website name
+- Website name and slogan
 - Meta description and keywords
+- Twitter & Blog RSS feeds
+- Email address' - support, developer, system
 
-Environment settings - application/config/constants_environment.php-default
-- System, developer, notification emails
+Environment settings - application/config/system_environment.php
 - Profiler ON/OFF
 - Email error log ON/OFF
 
@@ -43,7 +40,7 @@ Added base controllers
 Helpers
 - Debug
 - Time - https://github.com/ollierattue/codeigniter-time-helper
-- URL - external_redirect(), get_domain(), and admin_url()
+- URL
 - Form
 - Tax helper (UK VAT rate)
 - Page
@@ -53,9 +50,9 @@ Libraries
 - Links library - Save database table names into application/config/database_tables.php and the array key is then used in models. This means a table rename only needs to be updated in one place. 
 - Autoresponder - https://github.com/ollierattue/codeigniter-autoresponder 
 - SimpleLoginSecure auth library - http://codeigniter.com/wiki/SimpleLoginSecure/
-- Router extension - allows controllers to have multiple directories - http://glennpratama.wordpress.com/2009/10/20/multi-level-subfolder-for-controller-in-codeigniter/
+- Router extension - allows controllers to have multiple directories - https://github.com/ollierattue/codeigniter-multi-level-controller-extension
 - URI library extension - filter_uri() now allows url_encode characters
-- Form validation extension - added greater_than_or_equal() validation rule
+- Form validation extension - added greater_than_or_equal(), email_available() with ajax support, current_password_check()
 - Log library extension - emails errors to developer - http://wpstorm.net/2009/05/email-log-messages-library-codeigniter/
 - Session library extension - flashdata now supports 'success' or 'error' status and adds div formatting as applicable
 - DB utility library extension - fixed bug in csv_from_result() and added html encoding
@@ -80,6 +77,15 @@ Javascript
 
 Images
 - Image directory with useful icons
+
+TODO
+====
+
+- Rework template helper into library
+- Tidy up SimpleLoginSecure
+- Generic user signup form
+- RSS Parser
+- Starting point welcome view
 
 Extra
 =====
