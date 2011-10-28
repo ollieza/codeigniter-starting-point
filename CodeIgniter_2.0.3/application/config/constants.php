@@ -36,6 +36,23 @@ define('FOPEN_READ_WRITE_CREATE',				'a+b');
 define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
+/*
+|--------------------------------------------------------------------------
+| Custom Constants - Change these as appropriate
+|--------------------------------------------------------------------------
+*/
+
+define('WEBSITE_NAME', '');
+define('SLOGAN', "");
+define('META_DESCRIPTION', '');
+define('META_KEYWORDS', '');
+
+define('BLOG_RSS_URL', '');
+define('TWITTER_RSS_URL', 'http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=xxxxxxxxx');
+
+define('SUPPORT_EMAIL', ''); // Displayed to users
+define('DEVELOPER_EMAIL', ''); // Notifications / Errors sent to this address
+define("SYSTEM_EMAIL", "system@${_SERVER['HTTP_HOST']}"); // From email for amnesia, autoresponder, error logs etc
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */
