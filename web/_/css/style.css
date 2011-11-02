@@ -238,20 +238,18 @@ html,body {
 header {
 	float:left;
 	position:relative;
-	z-index:1; /* for IE7 */
 	width:100%;
 	margin:0 0 35px;
 	text-align:center;
-	background:#c6d55e;
+	background:#333;
 	}
 	header h1 {
 		display:inline-block;
 		margin:27px 0 9px;
 		}
 		header h1 a {
-			display:block;
-			height:100%;
-			overflow:hidden;
+			text-decoration:none;
+			color:#fff !important;
 			}
 	header nav {
 		width:940px;
@@ -260,10 +258,8 @@ header {
 		header nav ul {
 			float:left;
 			width:100%;
-			background:rgba(255,255,255,.3);
 			}
 			header nav li {
-				position:relative;
 				float:left;
 				}
 				header nav a {
@@ -275,7 +271,6 @@ header {
 					text-decoration:none;
 					font-size:123.1%;
 					text-shadow:0 1px 1px rgba(0,0,0,.3);
-					cursor:pointer;
 					color:#fff !important;
 					}
 
@@ -288,7 +283,8 @@ footer {
 	left:0;
     border-top:1px solid #d6d6d6;
     text-align:center;
-    background:#f0f0f0;
+	color:#fff;
+    background:#333;
     }
 
 
