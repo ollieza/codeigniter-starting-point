@@ -14,9 +14,9 @@ if ("${_SERVER['HTTP_HOST']}" == 'your-live-domain-here'): // e.g. crashouts.com
 ?>
 <?php /* Add you Google Analytics code into the SetAccount value */ ?>
 <script>
-	var _gaq=[["_setAccount","UA-xxxxxxxxxxxxxxxxx"],["_trackPageview"]];
-	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-		g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-		s.parentNode.insertBefore(g,s)}(document,"script"));
+	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+	Modernizr.load({
+		load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+	});
 </script>
 <?php endif; ?>
