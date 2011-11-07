@@ -17,6 +17,7 @@ $config['autoresponder_log']			= 'autoresponder_log';
 
 $config['ci_sessions'] 					= 'ci_sessions';
 $config['countries'] 					= 'countries';
+$config['us_states'] 					= 'us_states';
 
 // SimpleLoginSecure
 
