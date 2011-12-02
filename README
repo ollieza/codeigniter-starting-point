@@ -19,8 +19,6 @@ CI restructuring
 crossdomain.xml
 - None policy so access is not allowed from other domains - e.g. flash
 
-
-
 Git ignore
 - Ignored application/config/database.php
 - Ignored application/config/settings_environment.php
