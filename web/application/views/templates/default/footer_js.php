@@ -1,7 +1,7 @@
 <?php /* JavaScript at the bottom for fast page loading */ ?>
 <?php /* Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary */ ?>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
-<script>window.jQuery || document.write("<script src='/_/js/libs/jquery-1.6.4.min.js'>\x3C/script>")</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='/_/js/libs/jquery-1.7.1.min.js'>\x3C/script>")</script>
 
 <?php /* scripts concatenated and minified via ant build script */ ?>
 <script src="/_/js/plugins.js?<?php echo filemtime($_SERVER['DOCUMENT_ROOT'] . '/_/js/plugins.js'); ?>"></script>
