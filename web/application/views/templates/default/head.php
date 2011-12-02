@@ -1,8 +1,8 @@
 <head>
 	<meta charset="utf-8">
 	<title><?php echo WEBSITE_NAME ?> - <?php echo $page_title; ?></title>
-	<meta name="description" content="<?php echo META_DESCRIPTION; ?>" />
-	<meta name="keywords" content="<?php echo META_KEYWORDS; ?>" />
+	<meta name="description" content="<?php echo $meta_description; ?>" />
+	<meta name="keywords" content="<?php echo $meta_keywords; ?>" />
 
 	<?php /* Mobile viewport optimized: j.mp/bplateviewport */ ?>
 	<meta name="viewport" content="width=device-width,initial-scale=1">

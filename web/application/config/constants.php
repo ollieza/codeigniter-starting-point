@@ -44,8 +44,6 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 define('WEBSITE_NAME', 'Your website name');
 define('SLOGAN', "Your slogan");
-define('META_DESCRIPTION', '');
-define('META_KEYWORDS', '');
 
 define('TWITTER_ACCOUNT', ''); // e.g. ollierattue
 define('FACEBOOK_URL', ''); // e.g. http://facebook.com/crashouts

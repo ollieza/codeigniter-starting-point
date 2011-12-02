@@ -11,7 +11,7 @@ class Welcome extends Frontend_Controller {
 	
 	public function index()
 	{
-		build_page('welcome/welcome_index', $this->data);
+		$this->template->build_page('welcome/welcome_index', $this->data);
 	}
 	
 	// --------------------------------------------------------------------
