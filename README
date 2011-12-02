@@ -82,8 +82,7 @@ Images
 TODO
 ====
 
-- Rework template helper into library
-- Tidy up SimpleLoginSecure
+- Move to Tank Auth library from SimpleLoginSecure
 
 Extra
 =====
