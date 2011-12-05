@@ -77,7 +77,7 @@ class Template {
 	
 	function template_name($template_name = NULL)
 	{
-		$this->template_name = $template_name
+		$this->template_name = $template_name;
 	}
 
 	// --------------------------------------------------------------------
@@ -98,15 +98,15 @@ class Template {
 
 		@list($controller) = explode("/", substr($path, 0));
 
-		$CI->load->vars($data);
+		$this->CI->load->vars($data);
 
 		// Auto-set admin template based on the controller
 		if ($controller == 'admin')
 		{
-			$this->template_name = 'admin'
+			$this->template_name = 'admin';
 		}
 		
-		$CI->load->view("templates/{$this->template_name}/base");
+		$this->CI->load->view("templates/{$this->template_name}/base");
 	}
 	
 	// --------------------------------------------------------------------
