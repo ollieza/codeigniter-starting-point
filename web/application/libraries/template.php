@@ -87,7 +87,7 @@ class Template {
 		$data['path'] = $path;
 		$data['body_id'] = $this->body_id;
 		$data['body_class'] = $this->body_class;
-		$data['page_title'] = $this->page_title;
+		$data['page_title'] = " - {$this->page_title}";
 		$data['meta_keywords'] = $this->meta_keywords;
 		$data['meta_description'] = $this->meta_description;
 
