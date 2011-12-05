@@ -1,9 +1,8 @@
 All schema files are stored here:
 
-The schemas themselves are stored in schema/ e.g. schema/payments-schema.sql with a schema for every table in the database
+The schemas themselves are stored in schema/ e.g. schema/users.sql with a schema for every table in the database
 
+Schema data is then stored in the data directory:
 
-Schema data is then stored in the data directory
-
-- Any data which is critical to the application running, e.g. countries, should be saved into data/required in the format countries-schema-and-data.sql.
-- Any data which is used for testing the application should be saved in data/sample in the format submissions-schema-and-data.sql
+- Any data which is critical to the application running, e.g. countries, should be saved into data/required
+- Any data which is used for testing the application should be saved in data/sample
