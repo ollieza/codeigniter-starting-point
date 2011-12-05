@@ -82,7 +82,7 @@ class Template {
 
 	// --------------------------------------------------------------------
 			
-	function build_page($path = NULL, $data = NULL)
+	function build_page($path = NULL, $data = array())
 	{
 		$data['path'] = $path;
 		$data['body_id'] = $this->body_id;
