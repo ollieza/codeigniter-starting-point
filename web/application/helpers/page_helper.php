@@ -124,17 +124,5 @@ function nl2p($str = NULL)
 
 // --------------------------------------------------------------------
 
-function format_price($str = NULL)
-{
-	if ($str == NULL)
-	{
-		return $str;
-	}
-	
-	return number_format($str, 0, '.', '');
-}
-
-// --------------------------------------------------------------------
-
 /* End of file page_helper.php */
 /* Location: ./application/helpers/page_helper.php */
