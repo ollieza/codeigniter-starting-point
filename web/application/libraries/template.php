@@ -22,6 +22,7 @@ class Template {
 	var $body_id = NULL;
 	var $body_class = NULL;
 	var $page_title;
+	var $template_directory = 'templates/page';
 	var $template_name = 'default';
 	
 	function Template()
@@ -90,23 +91,25 @@ class Template {
 		$data['page_title'] = " - {$this->page_title}";
 		$data['meta_keywords'] = $this->meta_keywords;
 		$data['meta_description'] = $this->meta_description;
-
+		
 		if (is_array($path))
 		{
 			$path = $path[0]; // arrays of view files are not supported yet
 		}
 
 		@list($controller) = explode("/", substr($path, 0));
-
-		$this->CI->load->vars($data);
-
+		
 		// Auto-set admin template based on the controller
 		if ($controller == 'admin')
 		{
 			$this->template_name = 'admin';
 		}
 		
-		$this->CI->load->view("templates/{$this->template_name}/base");
+		$data['template_directory'] = $this->template_directory;
+		$data['template_name'] = $this->template_name;
+		
+		$this->CI->load->vars($data);
+		$this->CI->load->view("{$this->template_directory}/{$this->template_name}/base");
 	}
 	
 	// --------------------------------------------------------------------
