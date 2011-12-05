@@ -63,7 +63,7 @@ class Template {
 	
 	function body_id($body_id = NULL)
 	{
-		$this->body_id = $title;
+		$this->body_id = $body_id;
 	}
 
 	// --------------------------------------------------------------------
