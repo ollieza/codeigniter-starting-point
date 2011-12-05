@@ -13,7 +13,10 @@ class Error extends Frontend_Controller {
     {
         header("HTTP/1.1 404 Not Found");
 
-		build_page('error/error_404', NULL, '404 Page not found', 'Page', 'error_404');
+		$this->template->page_title('404 Page not found');
+		$this->template->body_id('Page');
+		$this->template->body_class('error_404');
+		$this->template->build_page('error/error_404', NULL);
     }
 
     // --------------------------------------------------------------------
