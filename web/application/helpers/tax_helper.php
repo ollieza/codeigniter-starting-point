@@ -1,42 +1,51 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-// UK VAT calculations using the VAT_RATE defined in config/constants.php
+// --------------------------------------------------------------------
 
-define('VAT_RATE', 15);
-
-// --------------------------------------------------------------------	
-
-function add_vat($price = NULL)
+function add_tax($price = NULL, $percentage = NULL)
 {
-	if ($price == NULL)
+	if (!$price)
 	{
-		return FALSE;
+		return format_price(0);
 	}
 	
-	$CI =& get_instance();
-
-	return number_format(round($price * ((VAT_RATE / 100) + 1), 2), 2, '.', '');
-}
-
-// --------------------------------------------------------------------	
-
-function get_vat($price = NULL)
-{
-	if ($price == NULL)
+	if (!$percentage)
 	{
-		return FALSE;
+		return format_price(0);
 	}
 	
-	$CI =& get_instance();
-	
-	return number_format(round($price * ((VAT_RATE / 100) + 1), 2), 2, '.', '');
+	return format_price($price * (($percentage / 100) + 1));
 }
 
 // --------------------------------------------------------------------
 
-function format_decimal_places($price = NULL, $number_of_places = 2)
+function get_tax($price = NULL, $percentage = NULL)
 {
-	return number_format($price, $number_of_places, '.', '');
+	if (!$price)
+	{
+		return format_price(0);
+	}
+	
+	if (!$percentage)
+	{
+		return format_price(0);
+	}
+	
+	return format_price($price * ($percentage / 100));
+}
+
+// --------------------------------------------------------------------
+
+function format_price($price = 0)
+{
+	return number_format($price, 2, '.', '');
+}
+
+// --------------------------------------------------------------------
+
+function clean_percentage($num)
+{
+	return trim(trim($num, '0'), '.');
 }
 
 // --------------------------------------------------------------------
