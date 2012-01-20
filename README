@@ -57,7 +57,7 @@ Libraries
 - URI library extension - filter_uri() now allows url_encode characters
 - Form validation extension - added greater_than_or_equal(), email_available() with ajax support, current_password_check()
 - Log library extension - emails errors to developer - http://wpstorm.net/2009/05/email-log-messages-library-codeigniter/
-- Session library extension - flashdata now supports 'success' or 'error' status and adds div formatting as applicable
+- Session library extension - set_flashmessage() with 'success' or 'error' status which adds div formatting as applicable.
 - DB utility library extension - fixed bug in csv_from_result() and added html encoding
 
 Models and db 

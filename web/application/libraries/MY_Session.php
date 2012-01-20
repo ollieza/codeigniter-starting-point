@@ -13,40 +13,31 @@ class MY_Session extends CI_Session
 	 * Add or change flashdata, only available
 	 * until the next request
 	 * Modified to print out <div> with success or error css class
+	 * and the data key is always set to 'message'
 	 * @access	public
 	 * @param	mixed
 	 * @param	string
 	 * @return	void
 	 */
 	
-	function set_flashdata($newdata = array(), $newval = '', $type = NULL)
+	public function set_flashmessage($val = NULL, $type = NULL)
 	{
-		if (is_string($newdata))
+		if ($val) // ensures we don't get empty messages
 		{
-			$newdata = array($newdata => $newval);
-		}
-
-		if (count($newdata) > 0)
-		{
-			foreach ($newdata as $key => $val)
+			if ($type == 'success')
 			{
-				$flashdata_key = $this->flashdata_key.':new:'.$key;
-
-				if ($type == 'success')
-				{
-					$val = '<div class="flash_success">'.$val.'</div>';
-				}
-
-				if ($type == 'error')
-				{
-					$val = '<div class="flash_error">'.$val.'</div>';
-				}
-
-				$this->set_userdata($flashdata_key, $val);
+				$val = '<div class="flash_success">'.$val.'</div>';
 			}
+
+			if ($type == 'error')
+			{
+				$val = '<div class="flash_error">'.$val.'</div>';
+			}
+			
+			$this->set_flashdata('message', $val, $type);
 		}
 	}
 	
-	// --------------------------------------------------------------------
+	// --------------------------------------------------------------------	
 }
 ?>
