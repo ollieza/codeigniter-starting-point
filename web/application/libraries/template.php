@@ -7,10 +7,7 @@
  *
  * @package   template
  * @version   1.0
- * @author    Ollie Rattue, Too many tabs <orattue[at]toomanytabs.com>
- * @copyright Copyright (c) 2010, Ollie Rattue
  * @license   http://www.opensource.org/licenses/mit-license.php
- * @link      http://github.com/ollierattue/codeigniter-template
  */
 
 class Template {
