@@ -34,4 +34,4 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`user_id`, `user_username`, `user_email`, `user_pass`, `user_date`, `user_modified`, `user_last_login`, `user_role`, `user_first_name`, `user_surname`, `user_telephone`, `user_address_line1`, `user_address_line2`, `user_towncity`, `user_county`, `user_country`, `user_postzip_code`, `user_billing_address_different`, `user_billing_address_line1`, `user_billing_address_line2`, `user_billing_towncity`, `user_billing_county`, `user_billing_country`, `user_billing_postzip_code`, `activated`) VALUES
-(1, 'admin', 'orattue@toomanytabs.com', '$P$BM2i8Y5e3lddJWPAd3Oxk.QJJTUgj7.', '2010-02-24 14:11:35', '2010-02-24 14:11:35', '2010-10-21 15:36:52', 'admin', 'Ollie', 'Rattue', '', '', '', '', '', '', '', 0, '', '', '', '', '', '', 1);
+(1, 'admin', 'joe@blogs.com', '$P$BM2i8Y5e3lddJWPAd3Oxk.QJJTUgj7.', '2010-02-24 14:11:35', '2010-02-24 14:11:35', '2010-10-21 15:36:52', 'admin', 'Ollie', 'Rattue', '', '', '', '', '', '', '', 0, '', '', '', '', '', '', 1);
